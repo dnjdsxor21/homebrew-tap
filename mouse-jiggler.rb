@@ -5,13 +5,13 @@
 class MouseJiggler < Formula
   desc "Moves the mouse pointer periodically without clicking"
   homepage "https://github.com/dnjdsxor21/mouse-jiggler-go"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/dnjdsxor21/mouse-jiggler-go/releases/download/v0.2.0/mouse-jiggler_0.2.0_darwin_arm64.tar.gz"
-    sha256 "c2b4dc87e01bc34a1c0398fb208fb344345ab54136c1383a4ffe82ab8acfd6f5"
+    url "https://github.com/dnjdsxor21/mouse-jiggler-go/releases/download/v0.3.0/mouse-jiggler_0.3.0_darwin_arm64.tar.gz"
+    sha256 "5317503c8b84a8824eb9831f09f3a0397dd7552e7fd53fba9c7d0af6693ba7fd"
 
     define_method(:install) do
       bin.install "mouse-jiggler"
